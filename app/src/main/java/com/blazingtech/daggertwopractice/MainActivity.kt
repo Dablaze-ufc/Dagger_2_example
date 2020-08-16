@@ -16,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         component.inject(this)
 
         car.drive()
-
-         }
+    }
 
 
 
