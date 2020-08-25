@@ -1,4 +1,4 @@
-package com.blazingtech.githubbrowser.repository
+package com.blazingtech.githubbrowser.home
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

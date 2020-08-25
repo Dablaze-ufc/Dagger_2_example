@@ -1,3 +1,5 @@
+include ':home'
+include ':home'
 include ':repository'
 include ':githubapi'
 include ':app'
