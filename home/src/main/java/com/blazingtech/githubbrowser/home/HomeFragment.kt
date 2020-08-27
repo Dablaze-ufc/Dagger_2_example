@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.blazingtech.githubbrowser.di.scope.ScreenScope
 import com.blazingtech.githubbrowser.di.viewmodel.AppViewModelFactory
 import com.blazingtech.githubbrowser.home.databinding.ScreenHomeBinding
 import javax.inject.Inject
 
+@ScreenScope
 class HomeFragment : Fragment() {
     @Inject lateinit var appViewModelFactory: AppViewModelFactory
 

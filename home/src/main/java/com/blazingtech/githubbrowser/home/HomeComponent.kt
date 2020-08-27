@@ -2,8 +2,11 @@ package com.blazingtech.githubbrowser.home
 
 import com.blazingtech.githubbrowser.appdeps.ApplicationDeps
 import com.blazingtech.githubbrowser.appdeps.applicationDeps
+import com.blazingtech.githubbrowser.di.component.getComponent
+import com.blazingtech.githubbrowser.di.scope.ScreenScope
 import dagger.Component
 
+@ScreenScope
 @Component(dependencies = [ApplicationDeps::class], modules = [HomeModule::class])
 interface HomeComponent {
 
@@ -18,6 +21,8 @@ interface HomeComponent {
 }
 
 fun HomeFragment.inject() {
-    DaggerHomeComponent.factory()
-        .create(requireContext().applicationDeps()).inject(this)
+    getComponent {
+        DaggerHomeComponent.factory()
+            .create(requireContext().applicationDeps())
+    }.inject(this)
 }
