@@ -22,6 +22,24 @@ class MockGitHubApi @Inject constructor() : GitHubApi{
                 "",
                 "1/1/2020",
                 "1/1/2020"
+            ), RepoApiModel(
+                1L,"Mock Repo",
+                "Mock description",
+                UserApiModel(1L, "dagger"),
+                1,
+                1,
+                "",
+                "1/1/2020",
+                "1/1/2020"
+            ), RepoApiModel(
+                1L,"Mock Repo",
+                "Mock description",
+                UserApiModel(1L, "dagger"),
+                1,
+                1,
+                "",
+                "1/1/2020",
+                "1/1/2020"
             )
         )
     }

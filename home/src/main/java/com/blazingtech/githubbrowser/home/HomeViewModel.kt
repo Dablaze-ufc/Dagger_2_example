@@ -3,10 +3,12 @@ package com.blazingtech.githubbrowser.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.blazingtech.githubbrowser.di.scope.ScreenScope
 import com.blazingtech.githubbrowser.home.list.RepoItem
 import com.blazingtech.githubbrowser.repository.AppRepository
 import javax.inject.Inject
 
+@ScreenScope
 class HomeViewModel @Inject constructor(
     private val appRepository: AppRepository
 ) : ViewModel() {
